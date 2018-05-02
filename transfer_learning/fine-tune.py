@@ -168,6 +168,7 @@ if __name__=="__main__":
   a.add_argument("--batch_size", default=BAT_SIZE)
   a.add_argument("--output_model_file", default="inceptionv3-ft.model")
   a.add_argument("--plot", action="store_true")
+  a.add_argument("-f", default="/run/user/1000/jupyter/kernel-726d25a9-cddd-4a7b-90dd-9e0ca43f9ba5.json")
 
   args = a.parse_args()
   if args.train_dir is None or args.val_dir is None:
